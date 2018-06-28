@@ -1,0 +1,43 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+{{ form_errors(form) }}
+
+<div>
+    {{ form_label(form.name) }}
+    {{ form_errors(form.name) }}
+    {{ form_widget(form.name) }}
+    {{ form_help(form.name) }}
+</div>
+<div>
+    {{ form_label(form.hp) }}
+    {{ form_errors(form.hp) }}
+    {{ form_widget(form.hp) }}
+    {{ form_help(form.hp) }}
+</div>
+<div>
+    {{ form_label(form.attack) }}
+    {{ form_errors(form.attack) }}
+    {{ form_widget(form.attack) }}
+    {{ form_help(form.attack) }}
+</div>
+<div>
+    {{ form_label(form.chanceOfCriticalDamage) }}
+    {{ form_errors(form.chanceOfCriticalDamage) }}
+    {{ form_widget(form.chanceOfCriticalDamage) }}
+    {{ form_help(form.chanceOfCriticalDamage) }}
+</div>
+<div>
+    {{ form_label(form.chanceOfDamageBias) }}
+    {{ form_errors(form.chanceOfDamageBias) }}
+    {{ form_widget(form.chanceOfDamageBias) }}
+    {{ form_help(form.chanceOfDamageBias) }}
+</div>
+<div>
+    {{ form_label(form.restoring) }}
+    {{ form_errors(form.restoring) }}
+    {{ form_widget(form.restoring) }}
+    {{ form_help(form.restoring) }}
+</div>
+<div>
+    {{ form_widget(form.save) }}
+</div>
+{{ form_end(form) }}
